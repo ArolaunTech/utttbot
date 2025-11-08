@@ -1,4 +1,6 @@
 #include <array>
+#include <vector>
+#include <string>
 
 #ifndef GAME_H
 #define GAME_H
@@ -6,13 +8,21 @@
 class Game {
 private:
 	std::array<int, 81> cells;
-	std::array<bool, 9> solved;
+	std::array<int, 9> megacells;
 	int turn;
 	int board;
+
+	std::vector<int> moves;
 public:
 	Game();
 
-	Game makeMove(int cellindex);
+	void setFromFen(std::string fen);
+
+	bool validClick(int cellindex);
+	bool isOver();
+
+	void makeMove(int cellindex);
+	void unmakeMove(int cellindex);
 };
 
 #endif
