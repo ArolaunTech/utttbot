@@ -1,0 +1,704 @@
+[ X O O   | X O X   | X O     |         ] A X => Square 11
+[ X O O   | X O X   | X   O   |         ] 3 X => Square 10
+[ X O O   | X O X   | X     O | O     X ] A X => Square 10
+[ X O O   | X O X   | X     O |   O   X ] A X => Square 10
+[ X O O   | X O X   | X     O |     O X ] 3 X => Square 10
+[ X O O   | X O X   | X     O |       X ] 4 O
+[ X O O   | X O X   | X     O |         ] 4 X => Square 16
+[ X O O   | X O X   | X       |         ] 3 O
+[ X O O   | X O     | X       |         ] 2 X => Square 7
+[ X O O   | X   O   | X     X | O       ] A X => Square 6
+[ X O O   | X   O   | X     X |   O     ] 2 X => Square 6
+[ X O O   | X   O   | X     X |     O   ] A X => Square 6
+[ X O O   | X O X   | O X     |         ] A X => Square 4
+[ X O O   | X O X   |   X O   |         ] 3 X => Square 4
+[ X O O   | X O X   |   X   O | O     X ] A X => Square 4
+[ X O O   | X O X   |   X   O |   O   X ] A X => Square 4
+[ X O O   | X O X   |   X   O |     O X ] 3 X => Square 9
+[ X O O   | X O X   |   X   O |       X ] 4 O
+[ X O O   | X O X   |   X   O |         ] 4 X => Square 16
+[ X O O   | X O X   |   X     |         ] 3 O
+[ X O O   | X O     |   X     |         ] 2 X => Square
+[ X O O   | X   O   |   X   X | O       ] A X => Square
+[ X O O   | X   O   |   X   X |   O     ] 2 X => Square
+[ X O O   | X   O   |   X   X |     O   ] A X => Square
+[ X O O   | X     X | O   X   | O       ] A X => Square
+[ X O O   | X     X | O   X   |   O     ] A X => Square
+[ X O O   | X     X | O   X   |     O   ] 3 X => Square
+[ X O O   | X O     | O X X   |         ] 2 X => Square
+[ X O O   | X   O   | O X X   |         ] A X => Square
+[ X O O   | X     O | O X X   | O     X ] A X => Square
+[ X O O   | X     O | O X X   |   O   X ] 2 X => Square
+[ X O O   | X     O | O X X   |     O X ] A X => Square
+[ X O O   | X     O | O X X   |       X ] 4 O
+[ X O O   | X     O | O X X   |         ] 4 X => Square
+[ X O O   | X       | O X X   |         ] 2 O
+[ X O O   | X       | O   X   |         ] A X => Square
+[ X O O   | X     X |   O X   | O       ] A X => Square
+[ X O O   | X     X |   O X   |   O     ] A X => Square
+[ X O O   | X     X |   O X   |     O   ] 3 X => Square
+[ X O O   | X X     | O     X | O       ] A X => Square
+[ X O O   | X X     |   O   X | O       ] A X => Square
+[ X O O   | X X     |     O X | O       ] 3 X => Square
+[ X O O   | X   X   | O     X | O       ] A X => Square
+[ X O O   | X   X   |   O   X | O       ] A X => Square
+[ X O O   | X   X   |     O X | O       ] 3 X => Square
+[ X O O   | X   X   |       X | O       ] 3 O
+[ X O O   | X       |       X | O       ] A X => Square
+[ X O O   | X X     | O     X |   O     ] A X => Square
+[ X O O   | X X     |   O   X |   O     ] A X => Square
+[ X O O   | X X     |     O X |   O     ] 3 X => Square
+[ X O O   | X   X   | O     X |   O     ] A X => Square
+[ X O O   | X   X   |   O   X |   O     ] A X => Square
+[ X O O   | X   X   |     O X |   O     ] 3 X => Square
+[ X O O   | X   X   |       X |   O     ] 3 O
+[ X O O   | X       |       X |   O     ] 2 X => Square
+[ X O O   | X O     | X     X |     O   ] 2 X => Square
+[ X O O   | X   O   | X     X |     O   ] A X => Square
+[ X O O   | X O     |   X   X |     O   ] 2 X => Square
+[ X O O   | X   O   |   X   X |     O   ] A X => Square
+[ X O O   | X O     |     X X |     O   ] 2 X => Square
+[ X O O   | X   O   |     X X |     O   ] A X => Square
+[ X O X   | O X     | O       |         ] A X => Square
+[ X O X   | O X     |   O     |         ] 2 X => Square
+[ X O X   | O X O   | X   O   |         ] 3 X => Square
+[ X O X   | O X   O | X   O   | O     X ] A X => Square
+[ X O X   | O X   O | X   O   |   O   X ] A X => Square
+[ X O X   | O X   O | X   O   |     O X ] 3 X => Square
+[ X O X   | O X   O | X   O   |       X ] 4 O
+[ X O X   | O X   O | X   O   |         ] 4 X => Square
+[ X O X   | O X     | X O O   |         ] 2 X => Square
+[ X O X   | O X     | X   O O | O     X ] A X => Square
+[ X O X   | O X     | X   O O |   O   X ] 2 X => Square
+[ X O X   | O X     | X   O O |     O X ] A X => Square
+[ X O X   | O X     | X   O O |       X ] 4 O
+[ X O X   | O X     | X   O O |         ] 4 X => Square
+[ X O X   | O X     | X   O   | O       ] A X => Square
+[ X O X   | O X     | X   O   |   O     ] 2 X => Square
+[ X O X   | O X     | X   O   |     O   ] 3 X => Square
+[ X O X   | O X O   | X   O   | X     O ] 3 X => Square
+[ X O X   | O X   O | X   O   | X     O ] 4 X => Square
+[ X O X   | O X     | X O O   | X     O ] 2 X => Square
+[ X O X   | O X     | X   O O | X     O ] 4 X => Square
+[ X O X   | O X     | X   O   | X O   O ] 2 X => Square
+[ X O X   | O X     | X   O   | X   O O ] 3 X => Square
+[ X O X   | O X     | X   O   | X     O ] A O
+[ X O X   | O X     | X   O   |       O ] 4 X => Square
+[ X O X   | O X     | X   O   |         ] A O
+[ X O X   | O X     |     O   |         ] 3 X => Square
+[ X O X   | O X     | O     O |     X   ] A X => Square
+[ X O X   | O X     |   O   O |     X   ] 2 X => Square
+[ X O X   | O X     |     O O |     X   ] A X => Square
+[ X O X   | O X     |       O |     X   ] 3 O
+[ X O X   | O X     |       O |         ] 4 X => Square
+[ X O X   | O X     |         |         ] 3 O
+[ X O     | O X     |         |         ] 1 X => Square
+[ X O O   |   X O   | X     X | O       ] A X => Square
+[ X O O   |   X O   | X     X |   O     ] 2 X => Square
+[ X O O   |   X O   | X     X |     O   ] A X => Square
+[ X O X   | O X O   | O X     |         ] A X => Square
+[ X O X   | O X O   |   X O   |         ] 3 X => Square
+[ X O X   | O X O   |   X   O | O     X ] A X => Square
+[ X O X   | O X O   |   X   O |   O   X ] A X => Square
+[ X O X   | O X O   |   X   O |     O X ] 3 X => Square
+[ X O X   | O X O   |   X   O |       X ] 4 O
+[ X O X   | O X O   |   X   O |         ] 4 X => Square
+[ X O X   | O X O   |   X     |         ] 3 O
+[ X O     | O X O   |   X     |         ] 1 X => Square
+[ X O   X |   X O O | O X     | O   X   ] A X => Square
+[ X O   X |   X O O | O X     |   O X   ] A X => Square
+[ X O   X |   X O O | O X     |     X O ] 4 X => Square
+[ X O   X |   X O O | O X     |     X   ] 4 O
+[ X O     |   X O O | O X     |     X   ] 1 X => Square
+[ X O     |   X O O |   X O X | O   X   ] 1 X => Square
+[ X O     |   X O O |   X O X |   O X   ] A X => Square
+[ X O     |   X O O |   X O X |     X O ] 4 X => Square
+[ X O     |   X O O |   X O X |     X   ] 4 O
+[ X O     |   X O O |   X O   |     X   ] 3 X => Square
+[ X O X   |   X O O | O X     | O     X ] A X => Square
+[ X O X   |   X O O |   X O   | O     X ] 3 X => Square
+[ X O X   |   X O O |   X   O | O     X ] 4 X => Square
+[ X O X   |   X O O |   X     | O     X ] 3 O
+[ X O     |   X O O |   X     | O     X ] 1 X => Square
+[ X O X   |   X O O | O X     |   O   X ] A X => Square
+[ X O X   |   X O O |   X O   |   O   X ] 3 X => Square
+[ X O X   |   X O O |   X   O |   O   X ] 4 X => Square
+[ X O X   |   X O O |   X     |   O   X ] 3 O
+[ X O     |   X O O |   X     |   O   X ] A X => Square
+[ X O X   |   X O   | O O X   |         ] 2 X => Square
+[ X O X   |   X O   | O   X O | O     X ] A X => Square
+[ X O X   |   X O   | O   X O |   O   X ] 2 X => Square
+[ X O X   |   X O   | O   X O |     O X ] A X => Square
+[ X O X   |   X O   | O   X O |       X ] 4 O
+[ X O X   |   X O   | O   X O |         ] 4 X => Square
+[ X O X   |   X O   | O   X   |         ] 3 O
+[ X O     |   X O   | O   X   |         ] 1 X => Square
+[ X O O   | X X O   |   O X   |         ] 3 X => Square
+[ X O   O | X X O   |   O X   | O     X ] A X => Square
+[ X O   O | X X O   |   O X   |   O   X ] A X => Square
+[ X O   O | X X O   |   O X   |     O X ] 3 X => Square
+[ X O   O | X X O   |   O X   |       X ] 4 O
+[ X O   O | X X O   |   O X   |         ] 4 X => Square
+[ X O     | X X O   |   O X   |         ] 1 O
+[ X O     |   X O   |   O X   |         ] 2 X => Square
+[ X O   X | O X O   |     X O | O X     ] A X => Square
+[ X O   X | O X O   |     X O |   X O   ] 3 X => Square
+[ X O   X | O X O   |     X O |   X   O ] 4 X => Square
+[ X O   X | O X O   |     X O |   X     ] 4 O
+[ X O     | O X O   |     X O |   X     ] 1 X => Square
+[ X O   X |   X O   | O   X O | O   X   ] A X => Square
+[ X O   X |   X O   | O   X O |   O X   ] 2 X => Square
+[ X O   X |   X O   | O   X O |     X O ] 4 X => Square
+[ X O   X |   X O   | O   X O |     X   ] 4 O
+[ X O     |   X O   | O   X O |     X   ] 1 X => Square
+[ X O     |   X O X |   O X O | O   X   ] 1 X => Square
+[ X O     |   X O X |   O X O |   O X   ] A X => Square
+[ X O     |   X O X |   O X O |     X O ] 4 X => Square
+[ X O     |   X O X |   O X O |     X   ] 4 O
+[ X O     |   X O   |   O X O |     X   ] 2 X => Square
+[ X O     |   X O   |     X O |     X   ] 3 O
+[ X O     |   X O   |     X O |         ] 4 X => Square
+[ X O     |   X O   |     X   |         ] 3 O
+[ X O     |   X O   |         |         ] 3 X => Square
+[ X O O   |   X   O | O   X X | X O     ] 2 X => Square
+[ X O O   |   X   O | O   X X | X   O   ] A X => Square
+[ X O O   |   X   O | O   X X | X     O ] 4 X => Square
+[ X O O   |   X   O | O   X X | X       ] 4 O
+[ X O O   |   X   O | O   X   | X       ] A X => Square
+[ X O O   | X X   O | O     X | X O     ] A X => Square
+[ X O O   | X X   O |   O   X | X O     ] A X => Square
+[ X O O   | X X   O |     O X | X O     ] 3 X => Square
+[ X O O   |   X X O | O     X | X O     ] A X => Square
+[ X O O   |   X X O |   O   X | X O     ] A X => Square
+[ X O O   |   X X O |     O X | X O     ] 3 X => Square
+[ X O O   |   X X O |       X | X O     ] 3 O
+[ X O O   |   X   O |       X | X O     ] 2 X => Square
+[ X O X   | O X   O | O     X | O X     ] A X => Square
+[ X O X   | O X   O | O     X |   X O   ] 3 X => Square
+[ X O X   | O X   O | O     X |   X   O ] 4 X => Square
+[ X O X   | O X   O | O     X |   X     ] 4 O
+[ X O X   | O X   O | O       |   X     ] A X => Square
+[ X O X   | O X   O |   O   X | O X     ] A X => Square
+[ X O X   | O X   O |   O   X |   X O   ] 3 X => Square
+[ X O X   | O X   O |   O   X |   X   O ] 4 X => Square
+[ X O X   | O X   O |   O   X |   X     ] 4 O
+[ X O X   | O X   O |   O     |   X     ] A X => Square
+[ X O X   | O X   O |     O X | O X     ] A X => Square
+[ X O X   | O X   O |     O X |   X O   ] 3 X => Square
+[ X O X   | O X   O |     O X |   X   O ] 4 X => Square
+[ X O X   | O X   O |     O X |   X     ] 4 O
+[ X O X   | O X   O |     O   |   X     ] 3 X => Square
+[ X O X   | O X   O |       O |   X     ] 4 X => Square
+[ X O X   | O X   O |         |   X     ] 3 O
+[ X O     | O X   O |         |   X     ] 1 X => Square
+[ X O   X |   X O O | O   X   | O X     ] A X => Square
+[ X O   X |   X O O | O   X   |   X O   ] 3 X => Square
+[ X O   X |   X O O | O   X   |   X   O ] 4 X => Square
+[ X O   X |   X O O | O   X   |   X     ] 4 O
+[ X O     |   X O O | O   X   |   X     ] 1 X => Square
+[ X O   X |   X O O |   O X   | O X     ] A X => Square
+[ X O   X |   X O O |   O X   |   X O   ] 3 X => Square
+[ X O   X |   X O O |   O X   |   X   O ] 4 X => Square
+[ X O   X |   X O O |   O X   |   X     ] 4 O
+[ X O     |   X O O |   O X   |   X     ] A X => Square
+[ X O X   |   X O O | O     X | O X     ] A X => Square
+[ X O X   |   X O O |   O   X | O X     ] A X => Square
+[ X O X   |   X O O |     O X | O X     ] 3 X => Square
+[ X O X   |   X O O |       X | O X     ] 3 O
+[ X O     |   X O O |       X | O X     ] 1 X => Square
+[ X O X   |   X   O | O O     |     X   ] 2 X => Square
+[ X O X   |   X   O | O   O   |     X   ] A X => Square
+[ X O X   |   X   O | O     O |     X   ] 4 X => Square
+[ X O X   |   X   O | O       |     X   ] 3 O
+[ X O     |   X   O | O       |     X   ] 1 X => Square
+[ X O O   | X X   O |   O   X | O   X   ] A X => Square
+[ X O O   | X X   O |   O   X |   O X   ] A X => Square
+[ X O O   | X X   O |   O   X |     X O ] 4 X => Square
+[ X O O   | X X   O |   O   X |     X   ] 4 O
+[ X O O   | X X   O |   O     |     X   ] 3 X => Square
+[ X O   O | X X   O |   O     |     X   ] 4 X => Square
+[ X O     | X X   O |   O     |     X   ] 1 O
+[ X O     |   X   O |   O     |     X   ] 2 X => Square
+[ X O O   |   X   O | X   O X | O   X   ] A X => Square
+[ X O O   |   X   O | X   O X |   O X   ] 2 X => Square
+[ X O O   |   X   O | X   O X |     X O ] 4 X => Square
+[ X O O   |   X   O | X   O X |     X   ] 4 O
+[ X O O   |   X   O | X   O   |     X   ] 3 X => Square
+[ X O   X | O X   O |   X O   | O   X   ] A X => Square
+[ X O   X | O X   O |   X O   |   O X   ] A X => Square
+[ X O   X | O X   O |   X O   |     X O ] 4 X => Square
+[ X O   X | O X   O |   X O   |     X   ] 4 O
+[ X O     | O X   O |   X O   |     X   ] 1 X => Square
+[ X O     |   X O O |   X O X | O   X   ] 1 X => Square
+[ X O     |   X O O |   X O X |   O X   ] A X => Square
+[ X O     |   X O O |   X O X |     X O ] 4 X => Square
+[ X O     |   X O O |   X O X |     X   ] 4 O
+[ X O     |   X O O |   X O   |     X   ] 3 X => Square
+[ X O     |   X   O |   X O   |     X   ] 2 O
+[ X O     |   X   O |     O   |     X   ] 3 X => Square
+[ X O     | O X   O |       O |   X X   ] 1 X => Square
+[ X O X   |   X   O | O       | O     X ] A X => Square
+[ X O X   |   X   O |   O     | O     X ] 2 X => Square
+[ X O X   | O X   O | X   O   | O     X ] A X => Square
+[ X O X   |   X O O | X   O   | O     X ] 3 X => Square
+[ X O X   |   X   O | X O O   | O     X ] 2 X => Square
+[ X O X   |   X   O | X   O O | O     X ] 4 X => Square
+[ X O X   |   X   O | X   O   | O O   X ] 2 X => Square
+[ X O X   |   X   O | X   O   | O   O X ] 3 X => Square
+[ X O X   |   X   O | X   O   | O     X ] A O
+[ X O X   |   X   O |     O   | O     X ] 3 X => Square
+[ X O X   |   X   O |       O | O     X ] 4 X => Square
+[ X O X   |   X   O |         | O     X ] 3 O
+[ X O     |   X   O |         | O     X ] 1 X => Square
+[ X O O   | X X   O | X O     |   O   X ] A X => Square
+[ X O O   | X X   O | X   O   |   O   X ] 3 X => Square
+[ X O O   | X X   O | X     O |   O   X ] 4 X => Square
+[ X O O   | X X   O | O X     |   O   X ] A X => Square
+[ X O O   | X X   O |   X O   |   O   X ] 3 X => Square
+[ X O O   | X X   O |   X   O |   O   X ] 4 X => Square
+[ X O O   | X X   O | O   X   |   O   X ] A X => Square
+[ X O O   | X X   O |   O X   |   O   X ] A X => Square
+[ X O O   | X X   O |     X O |   O   X ] 4 X => Square
+[ X O O   | X X   O |     X   |   O   X ] 3 O
+[ X O O   | X X   O |         |   O   X ] 3 X => Square
+[ X O   O | X X   O |         |   O   X ] 4 X => Square
+[ X O     | X X   O |         |   O   X ] 1 O
+[ X O     |   X   O |         |   O   X ] 2 X => Square
+[ X O X   | O X   O | O X     |     O X ] A X => Square
+[ X O X   | O X   O |   X O   |     O X ] 3 X => Square
+[ X O X   | O X   O |   X   O |     O X ] 4 X => Square
+[ X O X   | O X   O |   X     |     O X ] 3 O
+[ X O     | O X   O |   X     |     O X ] 1 X => Square
+[ X O X   |   X   O | O O X   |     O X ] 2 X => Square
+[ X O X   |   X   O | O   X O |     O X ] 4 X => Square
+[ X O X   |   X   O | O   X   |     O X ] 3 O
+[ X O     |   X   O | O   X   |     O X ] 1 X => Square
+[ X O O   | X X   O |   O X   |     O X ] 3 X => Square
+[ X O   O | X X   O |   O X   |     O X ] 4 X => Square
+[ X O     | X X   O |   O X   |     O X ] 1 O
+[ X O     |   X   O |   O X   |     O X ] 2 X => Square
+[ X O O   |   X   O |     X O | X   O X ] 3 X => Square
+[ X O   O |   X   O |     X O | X   O X ] A X => Square
+[ X O     |   X   O |     X O | X   O X ] 1 O
+[ X O     |   X   O |     X O |     O X ] 4 X => Square
+[ X O     |   X   O |     X   |     O X ] 3 O
+[ X O     |   X   O |         |     O X ] 3 X => Square
+[ X O     |   X   O |         |       X ] 4 O
+[ X O     |   X   O |         |         ] 4 X => Square
+[ X O     |   X     |         |         ] 2 O
+[ X O     |         |         |         ] 2 X => Square
+[ X O O   | X O X   | X O     |         ] A X => Square
+[ X O O   | X O X   | X   O   |         ] 3 X => Square
+[ X O O   | X O X   | X     O | O     X ] A X => Square
+[ X O O   | X O X   | X     O |   O   X ] A X => Square
+[ X O O   | X O X   | X     O |     O X ] 3 X => Square
+[ X O O   | X O X   | X     O |       X ] 4 O
+[ X O O   | X O X   | X     O |         ] 4 X => Square
+[ X O O   | X O X   | X       |         ] 3 O
+[ X O O   | X O     | X       |         ] 2 X => Square
+[ X O O   | X   O   | X     X | O       ] A X => Square
+[ X O O   | X   O   | X     X |   O     ] 2 X => Square
+[ X O O   | X   O   | X     X |     O   ] A X => Square
+[ X O O   | O X X   | X O     |         ] A X => Square
+[ X O O   | O X X   | X   O   |         ] 3 X => Square
+[ X O O   | O X X   | X     O | O     X ] A X => Square
+[ X O O   | O X X   | X     O |   O   X ] A X => Square
+[ X O O   | O X X   | X     O |     O X ] 3 X => Square
+[ X O O   | O X X   | X     O |       X ] 4 O
+[ X O O   | O X X   | X     O |         ] 4 X => Square
+[ X O O   | O X X   | X       |         ] 3 O
+[ X O O   | O X     | X       |         ] A X => Square
+[ X O O   |   X O   | X     X | O       ] A X => Square
+[ X O O   |   X O   | X     X |   O     ] 2 X => Square
+[ X O O   |   X O   | X     X |     O   ] A X => Square
+[ X O O   |     X X | X O     | O       ] A X => Square
+[ X O O   |     X X | X O     |   O     ] A X => Square
+[ X O O   |     X X | X O     |     O   ] 3 X => Square
+[ X O O   | X     X | X O     | O       ] A X => Square
+[ X O O   | X     X | X   O   | O       ] 3 X => Square
+[ X O O   |   X   X | X O     | O       ] A X => Square
+[ X O O   |   X   X | X   O   | O       ] 3 X => Square
+[ X O O   |     X X | X O     | O       ] A X => Square
+[ X O O   |     X X | X   O   | O       ] 3 X => Square
+[ X O O   | O     X | X X     | O       ] A X => Square
+[ X O O   |   O   X | X X     | O       ] 2 X => Square
+[ X O O   |     O X | X X     | O       ] A X => Square
+[ X O O   |       X | X X     | O       ] 2 O
+[ X O O   |       X | X       | O       ] A X => Square
+[ X O O   | X     X | X O     |   O     ] A X => Square
+[ X O O   | X     X | X   O   |   O     ] 3 X => Square
+[ X O O   |   X   X | X O     |   O     ] A X => Square
+[ X O O   |   X   X | X   O   |   O     ] 3 X => Square
+[ X O O   |     X X | X O     |   O     ] A X => Square
+[ X O O   |     X X | X   O   |   O     ] 3 X => Square
+[ X X O   | O O     |   X     |         ] A X => Square
+[ X X O   | O   O   |   X     |         ] 3 X => Square
+[ X X O   | O     O | O X     | X       ] A X => Square
+[ X X O   | O     O |   X O   | X       ] 3 X => Square
+[ X X O   | O     O |   X   O | X       ] 4 X => Square
+[ X X O   | O     O |   X     | X O     ] A X => Square
+[ X X O   | O     O |   X     | X   O   ] 3 X => Square
+[ X X O   | O     O |   X     | X     O ] 4 X => Square
+[ X X O   | O     O |   X     | X       ] A O
+[ X X O   | O     O |   X     |         ] 4 X => Square
+[ X X O   | O       |   X     |         ] 2 O
+[ X   O   | O       |   X     |         ] 1 X => Square
+[ X O O   | X O X   | O X     |         ] A X => Square
+[ X O O   | X O X   |   X O   |         ] 3 X => Square
+[ X O O   | X O X   |   X   O | O     X ] A X => Square
+[ X O O   | X O X   |   X   O |   O   X ] A X => Square
+[ X O O   | X O X   |   X   O |     O X ] 3 X => Square
+[ X O O   | X O X   |   X   O |       X ] 4 O
+[ X O O   | X O X   |   X   O |         ] 4 X => Square
+[ X O O   | X O X   |   X     |         ] 3 O
+[ X O O   | X O     |   X     |         ] 2 X => Square
+[ X   O O | X O   X | O X     | O   X   ] A X => Square
+[ X   O O | X O   X | O X     |   O X   ] A X => Square
+[ X   O O | X O   X | O X     |     X O ] 4 X => Square
+[ X   O O | X O   X | O X     |     X   ] 4 O
+[ X   O O | X O     | O X     |     X   ] A X => Square
+[ X   O O | X O     |   X O X | O   X   ] A X => Square
+[ X   O O | X O     |   X O X |   O X   ] 2 X => Square
+[ X   O O | X O     |   X O X |     X O ] 4 X => Square
+[ X   O O | X O     |   X O X |     X   ] 4 O
+[ X   O O | X O     |   X O   |     X   ] 3 X => Square
+[ X   O O | X O X   | O X     | O     X ] A X => Square
+[ X   O O | X O X   |   X O   | O     X ] 3 X => Square
+[ X   O O | X O X   |   X   O | O     X ] 4 X => Square
+[ X   O O | X O X   |   X     | O     X ] 3 O
+[ X   O O | X O     |   X     | O     X ] A X => Square
+[ X   O O | X O X   | O X     |   O   X ] A X => Square
+[ X   O O | X O X   |   X O   |   O   X ] 3 X => Square
+[ X   O O | X O X   |   X   O |   O   X ] 4 X => Square
+[ X   O O | X O X   |   X     |   O   X ] 3 O
+[ X   O O | X O     |   X     |   O   X ] 2 X => Square
+[ X X O   | O O X   | O X     |         ] A X => Square
+[ X X O   |   O X O | O X     | O     X ] A X => Square
+[ X X O   |   O X O | O X     |   O   X ] A X => Square
+[ X X O   |   O X O | O X     |     O X ] 3 X => Square
+[ X X O   |   O X O | O X     |       X ] 4 O
+[ X X O   |   O X O | O X     |         ] 4 X => Square
+[ X X O   |   O X   | O X     |         ] 2 O
+[ X   O   |   O X   | O X     |         ] 1 X => Square
+[ X O O   |   O X   | X X O   |         ] 2 X => Square
+[ X   O O |   O X   | X X O   | O     X ] A X => Square
+[ X   O O |   O X   | X X O   |   O   X ] 2 X => Square
+[ X   O O |   O X   | X X O   |     O X ] A X => Square
+[ X   O O |   O X   | X X O   |       X ] 4 O
+[ X   O O |   O X   | X X O   |         ] 4 X => Square
+[ X   O   |   O X   | X X O   |         ] 1 O
+[ X   O   |   O X   |   X O   |         ] 3 X => Square
+[ X O O   |   O X X |   X   O | X O     ] A X => Square
+[ X O O   |   O X X |   X   O | X   O   ] 3 X => Square
+[ X O O   |   O X X |   X   O | X     O ] 4 X => Square
+[ X O O   |   O X X |   X   O | X       ] 4 O
+[ X O O   |   O X   |   X   O | X       ] 2 X => Square
+[ X   O X | O O X   |   X   O | O X     ] A X => Square
+[ X   O X | O O X   |   X   O |   X O   ] 3 X => Square
+[ X   O X | O O X   |   X   O |   X   O ] 4 X => Square
+[ X   O X | O O X   |   X   O |   X     ] 4 O
+[ X   O   | O O X   |   X   O |   X     ] 1 X => Square
+[ X   O X |   O X   | O X   O | O   X   ] A X => Square
+[ X   O X |   O X   | O X   O |   O X   ] 2 X => Square
+[ X   O X |   O X   | O X   O |     X O ] 4 X => Square
+[ X   O X |   O X   | O X   O |     X   ] 4 O
+[ X   O   |   O X   | O X   O |     X   ] 1 X => Square
+[ X   O X |   O X   |   X O O | O   X   ] A X => Square
+[ X   O X |   O X   |   X O O |   O X   ] 2 X => Square
+[ X   O X |   O X   |   X O O |     X O ] 4 X => Square
+[ X   O X |   O X   |   X O O |     X   ] 4 O
+[ X   O   |   O X   |   X O O |     X   ] A X => Square
+[ X   O   |   O X   |   X   O |     X   ] 3 O
+[ X   O   |   O X   |   X   O |         ] 4 X => Square
+[ X   O   |   O X   |   X     |         ] 3 O
+[ X   O   |   O     |   X     |         ] 2 X => Square
+[ X O O   |     O X | X X     | O       ] A X => Square
+[ X O O   |     O X | X X     |   O     ] 2 X => Square
+[ X O O   |     O X | X X     |     O   ] A X => Square
+[ X O O   |     O X |   X X   | O       ] A X => Square
+[ X O O   |     O X |   X X   |   O     ] 2 X => Square
+[ X O O   |     O X |   X X   |     O   ] A X => Square
+[ X   O   |     O   |   X   X | O       ] 1 X => Square
+[ X O O   | X   O   |   X   X |   O     ] 2 X => Square
+[ X   O   | O X O   |   X   X |   O     ] 1 X => Square
+[ X   O   |     O X |   X   X | O O     ] 1 X => Square
+[ X   O   |     O X |   X   X |   O O   ] A X => Square
+[ X   O   |     O X |   X   X |   O   O ] A X => Square
+[ X   O   |     O X |   X   X |   O     ] 4 O
+[ X   O   |     O   |   X   X |   O     ] 2 X => Square
+[ X   O   |     O   |   X   X |     O   ] A X => Square
+[ X   O   | O   O   |   X   X |   X   O ] 1 X => Square
+[ X   O   |   O O   |   X   X |   X   O ] A X => Square
+[ X   O   |     O O |   X   X |   X   O ] 4 X => Square
+[ X   O   |     O   |   X   X |   X   O ] 2 O
+[ X   O   |     O   |   X   X |       O ] 4 X => Square
+[ X   O   |     O   |   X   X |         ] 4 O
+[ X   O   |     O   |   X     |         ] 3 X => Square
+[ X O O   |     X O | O X   X | X O     ] 2 X => Square
+[ X O O   |     X O | O X   X | X   O   ] A X => Square
+[ X O O   |     X O | O X   X | X     O ] 4 X => Square
+[ X O O   |     X O | O X   X | X       ] 4 O
+[ X O O   |     X O | O X     | X       ] A X => Square
+[ X O O   |     X O |   X O X | X O     ] 2 X => Square
+[ X O O   |     X O |   X O X | X   O   ] A X => Square
+[ X O O   |     X O |   X O X | X     O ] 4 X => Square
+[ X O O   |     X O |   X O X | X       ] 4 O
+[ X O O   |     X O |   X O   | X       ] 3 X => Square
+[ X X O   | O     O | O X     |   X     ] A X => Square
+[ X X O   | O     O |   X O   |   X     ] 3 X => Square
+[ X X O   | O     O |   X   O |   X     ] 4 X => Square
+[ X X O   | O     O |   X     | O X     ] A X => Square
+[ X X O   | O     O |   X     |   X O   ] 3 X => Square
+[ X X O   | O     O |   X     |   X   O ] 4 X => Square
+[ X X O   | O     O |   X     |   X     ] A O
+[ X   O   | O     O |   X     |   X     ] 1 X => Square
+[ X X O   |   O   O | O X     |   X     ] A X => Square
+[ X X O   |   O   O |   X O   |   X     ] 3 X => Square
+[ X X O   |   O   O |   X   O |   X     ] 4 X => Square
+[ X X O   |   O   O |   X     | O X     ] A X => Square
+[ X X O   |   O   O |   X     |   X O   ] 3 X => Square
+[ X X O   |   O   O |   X     |   X   O ] 4 X => Square
+[ X X O   |   O   O |   X     |   X     ] A O
+[ X   O   |   O   O |   X     |   X     ] A X => Square
+[ X   O   |     O O |   X   X | O X     ] 1 X => Square
+[ X   O   |     O O |   X   X |   X O   ] A X => Square
+[ X   O   |     O O |   X   X |   X   O ] 4 X => Square
+[ X   O   |     O O |   X   X |   X     ] 4 O
+[ X   O   |     O O |   X     |   X     ] 3 X => Square
+[ X   O   |       O |   X     |   X     ] 2 O
+[ X   O   |       O |   X     |         ] 4 X => Square
+[ X   O   |         |   X     |         ] 2 O
+[ X   O   |         |         |         ] 3 X => Square
+[ X O   O | X O X   | O     X | X O     ] A X => Square
+[ X O   O | X O X   | O     X | X   O   ] 3 X => Square
+[ X O   O | X O X   | O     X | X     O ] 4 X => Square
+[ X O   O | X O X   | O     X | X       ] 4 O
+[ X O   O | X O X   | O       | X       ] A X => Square
+[ X O   O | X O X   |   O   X | X O     ] A X => Square
+[ X O   O | X O X   |   O   X | X   O   ] 3 X => Square
+[ X O   O | X O X   |   O   X | X     O ] 4 X => Square
+[ X O   O | X O X   |   O   X | X       ] 4 O
+[ X O   O | X O X   |   O     | X       ] A X => Square
+[ X O   O | X O X   |     O X | X O     ] A X => Square
+[ X O   O | X O X   |     O X | X   O   ] 3 X => Square
+[ X O   O | X O X   |     O X | X     O ] 4 X => Square
+[ X O   O | X O X   |     O X | X       ] 4 O
+[ X O   O | X O X   |     O   | X       ] 3 X => Square
+[ X O   O | X O X   |       O | X       ] 4 X => Square
+[ X O   O | X O X   |         | X       ] 3 O
+[ X O   O | X O     |         | X       ] 2 X => Square
+[ X O   O | X   O X | O   X   | X O     ] A X => Square
+[ X O   O | X   O X | O   X   | X   O   ] 3 X => Square
+[ X O   O | X   O X | O   X   | X     O ] 4 X => Square
+[ X O   O | X   O X | O   X   | X       ] 4 O
+[ X O   O | X   O   | O   X   | X       ] A X => Square
+[ X O   O | X   O X |   O X   | X O     ] A X => Square
+[ X O   O | X   O X |   O X   | X   O   ] 3 X => Square
+[ X O   O | X   O X |   O X   | X     O ] 4 X => Square
+[ X O   O | X   O X |   O X   | X       ] 4 O
+[ X O   O | X   O   |   O X   | X       ] 2 X => Square
+[ X O   O | X X O   | O     X | X O     ] A X => Square
+[ X O   O | X X O   |   O   X | X O     ] A X => Square
+[ X O   O | X X O   |     O X | X O     ] 3 X => Square
+[ X O   O | O X X   | O     X | X O     ] A X => Square
+[ X O   O | O X X   | O     X | X   O   ] 3 X => Square
+[ X O   O | O X X   | O     X | X     O ] 4 X => Square
+[ X O   O | O X X   | O     X | X       ] 4 O
+[ X O   O | O X X   | O       | X       ] A X => Square
+[ X O   O | O X X   |   O   X | X O     ] A X => Square
+[ X O   O | O X X   |   O   X | X   O   ] 3 X => Square
+[ X O   O | O X X   |   O   X | X     O ] 4 X => Square
+[ X O   O | O X X   |   O   X | X       ] 4 O
+[ X O   O | O X X   |   O     | X       ] A X => Square
+[ X O   O | O X X   |     O X | X O     ] A X => Square
+[ X O   O | O X X   |     O X | X   O   ] 3 X => Square
+[ X O   O | O X X   |     O X | X     O ] 4 X => Square
+[ X O   O | O X X   |     O X | X       ] 4 O
+[ X O   O | O X X   |     O   | X       ] 3 X => Square
+[ X O   O | O X X   |       O | X       ] 4 X => Square
+[ X O   O | O X X   |         | X       ] 3 O
+[ X O   O | O X     |         | X       ] A X => Square
+[ X O   O |   X O X | O   X   | X O     ] A X => Square
+[ X O   O |   X O X | O   X   | X   O   ] 3 X => Square
+[ X O   O |   X O X | O   X   | X     O ] 4 X => Square
+[ X O   O |   X O X | O   X   | X       ] 4 O
+[ X O   O |   X O   | O   X   | X       ] A X => Square
+[ X O   O |   X O X |   O X   | X O     ] A X => Square
+[ X O   O |   X O X |   O X   | X   O   ] 3 X => Square
+[ X O   O |   X O X |   O X   | X     O ] 4 X => Square
+[ X O   O |   X O X |   O X   | X       ] 4 O
+[ X O   O |   X O   |   O X   | X       ] 2 X => Square
+[ X O   O | X X O   | O     X | X O     ] A X => Square
+[ X O   O | X X O   |   O   X | X O     ] A X => Square
+[ X O   O | X X O   |     O X | X O     ] 3 X => Square
+[ X O   O |     X X | O       | X O     ] A X => Square
+[ X O   O | O   X X | O X     | X O     ] A X => Square
+[ X O   O | O   X X | O X     | X   O   ] 3 X => Square
+[ X O   O | O   X X | O X     | X     O ] 4 X => Square
+[ X O   O | O   X X | O X     | X       ] 4 O
+[ X O   O | O   X   | O X     | X       ] A X => Square
+[ X O   O |   O X X | O X     | X O     ] A X => Square
+[ X O   O |   O X X | O X     | X   O   ] 3 X => Square
+[ X O   O |   O X X | O X     | X     O ] 4 X => Square
+[ X O   O |   O X X | O X     | X       ] 4 O
+[ X O   O |   O X   | O X     | X       ] 2 X => Square
+[ X O   O | O   X   | O       | X X     ] A X => Square
+[ X O   O |   O X   | O       | X X     ] 2 X => Square
+[ X O   O |     X O | O       | X X     ] A X => Square
+[ X O   O |     X   | O       | X X     ] 2 O
+[ X O   O |     X   | O       | X       ] A X => Square
+[ X O   O |     X X |   O     | X O     ] A X => Square
+[ X O   O | X     X | O       | X O     ] A X => Square
+[ X O   O | X     X |   O     | X O     ] A X => Square
+[ X O   O |   X   X | O       | X O     ] A X => Square
+[ X O   O |   X   X |   O     | X O     ] A X => Square
+[ X O   O |     X X | O       | X O     ] A X => Square
+[ X O   O |     X X |   O     | X O     ] A X => Square
+[ X X   O | O O     | X O     |   X     ] A X => Square
+[ X X   O | O O     | X   O   |   X     ] 3 X => Square
+[ X X   O | O O     | X     O |   X     ] 4 X => Square
+[ X X   O | O O     | X       | O X     ] A X => Square
+[ X X   O | O O     | X       |   X O   ] 3 X => Square
+[ X X   O | O O     | X       |   X   O ] 4 X => Square
+[ X X   O | O O     | X       |   X     ] A O
+[ X X   O | O O     |         |   X     ] A X => Square
+[ X X   O | O   O   | X O     |   X     ] A X => Square
+[ X X   O | O   O   | X   O   |   X     ] 3 X => Square
+[ X X   O | O   O   | X     O |   X     ] 4 X => Square
+[ X X   O | O   O   | X       | O X     ] A X => Square
+[ X X   O | O   O   | X       |   X O   ] 3 X => Square
+[ X X   O | O   O   | X       |   X   O ] 4 X => Square
+[ X X   O | O   O   | X       |   X     ] A O
+[ X X   O | O   O   |         |   X     ] 3 X => Square
+[ X X   O | O     O |         |   X     ] 4 X => Square
+[ X X   O | O       |         |   X     ] 2 O
+[ X     O | O       |         |   X     ] 1 X => Square
+[ X O   O | X O X   | O     X | O X     ] A X => Square
+[ X O   O | X O X   | O     X |   X O   ] 3 X => Square
+[ X O   O | X O X   | O     X |   X   O ] 4 X => Square
+[ X O   O | X O X   | O     X |   X     ] 4 O
+[ X O   O | X O X   | O       |   X     ] A X => Square
+[ X O   O | X O X   |   O   X | O X     ] A X => Square
+[ X O   O | X O X   |   O   X |   X O   ] 3 X => Square
+[ X O   O | X O X   |   O   X |   X   O ] 4 X => Square
+[ X O   O | X O X   |   O   X |   X     ] 4 O
+[ X O   O | X O X   |   O     |   X     ] A X => Square
+[ X O   O | X O X   |     O X | O X     ] A X => Square
+[ X O   O | X O X   |     O X |   X O   ] 3 X => Square
+[ X O   O | X O X   |     O X |   X   O ] 4 X => Square
+[ X O   O | X O X   |     O X |   X     ] 4 O
+[ X O   O | X O X   |     O   |   X     ] 3 X => Square
+[ X O   O | X O X   |       O |   X     ] 4 X => Square
+[ X O   O | X O X   |         |   X     ] 3 O
+[ X O   O | X O     |         |   X     ] 2 X => Square
+[ X   O O | X O   X | O   X   | O X     ] A X => Square
+[ X   O O | X O   X | O   X   |   X O   ] 3 X => Square
+[ X   O O | X O   X | O   X   |   X   O ] 4 X => Square
+[ X   O O | X O   X | O   X   |   X     ] 4 O
+[ X   O O | X O     | O   X   |   X     ] A X => Square
+[ X   O O | X O   X |   O X   | O X     ] A X => Square
+[ X   O O | X O   X |   O X   |   X O   ] 3 X => Square
+[ X   O O | X O   X |   O X   |   X   O ] 4 X => Square
+[ X   O O | X O   X |   O X   |   X     ] 4 O
+[ X   O O | X O     |   O X   |   X     ] 2 X => Square
+[ X   O O | X O X   | O     X | O X     ] A X => Square
+[ X   O O | X O X   |   O   X | O X     ] A X => Square
+[ X   O O | X O X   |     O X | O X     ] 3 X => Square
+[ X   O O | X O X   |       X | O X     ] 3 O
+[ X   O O | X O     |       X | O X     ] A X => Square
+[ X X   O | O O X   | O     X | O X     ] A X => Square
+[ X X   O | O O X   | O     X |   X O   ] 3 X => Square
+[ X X   O | O O X   | O     X |   X   O ] 4 X => Square
+[ X X   O | O O X   | O     X |   X     ] 4 O
+[ X X   O | O O X   | O       |   X     ] A X => Square
+[ X X   O |   O X O | O       |   X     ] 4 X => Square
+[ X X   O |   O X   | O       |   X     ] 2 O
+[ X     O |   O X   | O       |   X     ] 1 X => Square
+[ X O   O | X O X   |   O   X | O X     ] A X => Square
+[ X O   O | X O X   |   O   X |   X O   ] 3 X => Square
+[ X O   O | X O X   |   O   X |   X   O ] 4 X => Square
+[ X O   O | X O X   |   O   X |   X     ] 4 O
+[ X O   O | X O X   |   O     |   X     ] A X => Square
+[ X   O O | X O X   |   O   X | O X     ] A X => Square
+[ X   O O | X O X   |   O   X |   X O   ] 3 X => Square
+[ X   O O | X O X   |   O   X |   X   O ] 4 X => Square
+[ X   O O | X O X   |   O   X |   X     ] 4 O
+[ X   O O | X O X   |   O     |   X     ] 3 X => Square
+[ X     O | X O X   |   O     |   X     ] 1 O
+[ X     O |   O X   |   O     |   X     ] 2 X => Square
+[ X O   O |   O X X | X   O   | O X     ] A X => Square
+[ X O   O |   O X X | X   O   |   X O   ] 3 X => Square
+[ X O   O |   O X X | X   O   |   X   O ] 4 X => Square
+[ X O   O |   O X X | X   O   |   X     ] 4 O
+[ X O   O |   O X   | X   O   |   X     ] 2 X => Square
+[ X   O O |   O X   | X   O X | O X     ] A X => Square
+[ X   O O |   O X   | X   O X |   X O   ] A X => Square
+[ X   O O |   O X   | X   O X |   X   O ] 4 X => Square
+[ X   O O |   O X   | X   O X |   X     ] 4 O
+[ X   O O |   O X   | X   O   |   X     ] 3 X => Square
+[ X     O |   O X   | X   O   |   X     ] 1 O
+[ X     O |   O X   |     O   |   X     ] 3 X => Square
+[ X O   O |   O X   |       O | X X     ] 2 X => Square
+[ X     O |   O X   | O     O |   X X   ] 1 X => Square
+[ X     O |   O X   |   O   O |   X X   ] 2 X => Square
+[ X     O |   O X   |     O O |   X X   ] A X => Square
+[ X     O |   O X   |       O |   X X   ] 3 O
+[ X     O |   O X   |       O |   X     ] 4 X => Square
+[ X     O |   O X   |         |   X     ] 3 O
+[ X     O |   O     |         |   X     ] 2 X => Square
+[ X O   O | X   O X | X O     | O X     ] A X => Square
+[ X O   O | X   O X | X   O   | O X     ] 3 X => Square
+[ X O   O | X   O X | X     O | O X     ] 4 X => Square
+[ X O   O |   X O X | X O     | O X     ] A X => Square
+[ X O   O |   X O X | X   O   | O X     ] 3 X => Square
+[ X O   O |   X O X | X     O | O X     ] 4 X => Square
+[ X O   O |     O X | X O     | O X X   ] 2 X => Square
+[ X O   O |     O X | X   O   | O X X   ] 3 X => Square
+[ X O   O |     O X | X     O | O X X   ] A X => Square
+[ X O   O |     O X | X       | O X X   ] 3 O
+[ X O   O |     O X | X       | O X     ] A X => Square
+[ X X   O | O   O   | O X     |   X     ] A X => Square
+[ X X   O | O   O   |   X O   |   X     ] 3 X => Square
+[ X X   O | O   O   |   X   O |   X     ] 4 X => Square
+[ X X   O | O   O   |   X     | O X     ] A X => Square
+[ X X   O | O   O   |   X     |   X O   ] 3 X => Square
+[ X X   O | O   O   |   X     |   X   O ] 4 X => Square
+[ X X   O | O   O   |   X     |   X     ] A O
+[ X     O | O   O   |   X     |   X     ] 1 X => Square
+[ X X   O |   O O   | O X     |   X     ] A X => Square
+[ X X   O |   O O   |   X O   |   X     ] 3 X => Square
+[ X X   O |   O O   |   X   O |   X     ] 4 X => Square
+[ X X   O |   O O   |   X     | O X     ] A X => Square
+[ X X   O |   O O   |   X     |   X O   ] 3 X => Square
+[ X X   O |   O O   |   X     |   X   O ] 4 X => Square
+[ X X   O |   O O   |   X     |   X     ] A O
+[ X     O |   O O   |   X     |   X     ] A X => Square
+[ X     O |     O O | O X     |   X X   ] 1 X => Square
+[ X     O |     O O |   X O   |   X X   ] 3 X => Square
+[ X     O |     O O |   X   O |   X X   ] A X => Square
+[ X     O |     O O |   X     |   X X   ] 3 O
+[ X     O |     O O |   X     |   X     ] 4 X => Square
+[ X     O |     O   |   X     |   X     ] 2 O
+[ X     O |     O   |         |   X     ] 3 X => Square
+[ X O   O |     X O | O       | X X     ] A X => Square
+[ X O   O |     X O |   O     | X X     ] 2 X => Square
+[ X     O |       O | O       |   X X   ] 1 X => Square
+[ X O   O | X     O |   O     |   X X   ] 2 X => Square
+[ X     O | O X   O |   O     |   X X   ] 1 X => Square
+[ X     O |     X O | O O     |   X X   ] 1 X => Square
+[ X     O |     X O |   O O   |   X X   ] A X => Square
+[ X     O |     X O |   O   O |   X X   ] A X => Square
+[ X     O |     X O |   O     |   X X   ] 3 O
+[ X     O |       O |   O     |   X X   ] 2 X => Square
+[ X     O | O     O |   X O   |   X X   ] 1 X => Square
+[ X     O |   O   O |   X O   |   X X   ] A X => Square
+[ X     O |     O O |   X O   |   X X   ] 3 X => Square
+[ X     O |       O |   X O   |   X X   ] 2 O
+[ X     O |       O |     O   |   X X   ] 3 X => Square
+[ X     O |       O |       O |   X X   ] A X => Square
+[ X     O |       O |         |   X X   ] 3 O
+[ X     O |       O |         |   X     ] 4 X => Square
+[ X     O |         |         |   X     ] 2 O
+[ X     O |         |         |         ] 4 X => Square
+[ X       |         |         |         ] 1 O
+[         |         |         |         ] A X => Square 1

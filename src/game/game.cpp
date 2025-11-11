@@ -155,6 +155,38 @@ bool Game::isOver() {
 	return true;
 }
 
+int Game::eval() {
+	for (int player = -1; player <= 1; player += 2) {
+		for (int win = 0; win < 8; win++) {
+			bool valid = true;
+
+			for (int cell = 0; cell < 9; cell++) {
+				if (!wins[win][cell]) continue;
+				if (megacells[cell] != player) {
+					valid = false;
+					break;
+				}
+			}
+
+			if (valid) return player;
+		}
+	}
+
+	for (int megacell = 0; megacell < 9; megacell++) {
+		if (megacells[megacell] != 0) continue;
+
+		for (int cell = 0; cell < 9; cell++) {
+			if (cells[9 * megacell + cell] == 0) return 2;
+		}
+	}
+
+	return 0;
+}
+
+int Game::getTurn() {
+	return turn;
+}
+
 void Game::makeMove(int cellindex) {
 	int clickboardindex = cellindex / 9;
 	int newboardindex = cellindex % 9;
@@ -227,4 +259,92 @@ void Game::unmakeMove(int cellindex) {
 			if (empty) board = boardindex;
 		}
 	}
+}
+
+void Game::unmakeMove() {
+	// Unmaking a move on an empty game.
+	// For non-buggy code this condition should never trigger.
+	if (moves.empty()) return;
+
+	int cellindex = moves[moves.size() - 1];
+
+	moves.pop_back();
+
+	cells[cellindex] = 0;
+	megacells[cellindex / 9] = 0;
+
+	turn *= -1;
+
+	board = 9;
+	if (!moves.empty()) {
+		int boardindex = moves[moves.size() - 1] % 9;
+
+		if (megacells[boardindex] == 0) {
+			bool empty = false;
+			for (int cell = 0; cell < 9; cell++) {
+				if (cells[9 * boardindex + cell] == 0) {
+					empty = true;
+					break;
+				}
+			}
+
+			if (empty) board = boardindex;
+		}
+	}
+}
+
+std::string Game::toString() {
+	std::string out = "";
+
+	for (int row = 0; row < 9; row++) {
+		for (int col = 0; col < 9; col++) {
+			int boardindex = 3 * (row / 3) + col / 3;
+			int cellindex = 3 * (row % 3) + col % 3;
+
+			int index = 9 * boardindex + cellindex;
+
+			switch (cells[index]) {
+			case 1:
+				out += "X";
+				break;
+			case -1:
+				out += "O";
+				break;
+			default:
+				out += ".";
+			}
+
+			if (col == 2 || col == 5) {
+				out += " | ";
+			} else {
+				out += " ";
+			}
+		}
+		out += "\n";
+
+		if (row == 2 || row == 5) {
+			out += "------+-------+------\n";
+		}
+	}
+
+	out += "\nMegacells: ";
+
+	for (int i = 0; i < 9; i++) {
+		switch (megacells[i]) {
+		case 1:
+			out += "X";
+			break;
+		case -1:
+			out += "O";
+			break;
+		default:
+			out += ".";
+		}
+
+		out += " ";
+	}
+
+	out += "\n";
+
+	return out;
 }

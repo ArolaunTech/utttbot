@@ -19,10 +19,17 @@ public:
 	void setFromFen(std::string fen);
 
 	bool validClick(int cellindex);
+
 	bool isOver();
+	int eval();
+
+	int getTurn();
 
 	void makeMove(int cellindex);
 	void unmakeMove(int cellindex);
+	void unmakeMove();
+
+	std::string toString();
 };
 
 #endif
