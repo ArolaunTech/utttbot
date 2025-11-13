@@ -16,6 +16,10 @@ const bool wins[8][9] = {
 };
 
 Game::Game() {
+	reset();
+}
+
+void Game::reset() {
 	for (int i = 0; i < 81; i++) {
 		cells[i] = 0; // Blank
 	}
@@ -38,6 +42,7 @@ void Game::setFromFen(std::string fen) {
 	for (int i = 0; i < 81; i++) {
 		switch (fen[i]) {
 			case ' ':
+			case '_':
 				cells[i] = 0;
 				break;
 			case 'x':
@@ -117,6 +122,31 @@ void Game::setFromFen(std::string fen) {
 	}
 }
 
+std::string Game::toFen() {
+	std::string out;
+
+	int lastmove = -1;
+	if (!moves.empty()) {
+		lastmove = moves[moves.size() - 1];
+	}
+
+	for (int i = 0; i < 81; i++) {
+		if (cells[i] == 0) {
+			out += "_";
+		} else if (cells[i] == 1 && i == lastmove) {
+			out += "X";
+		} else if (cells[i] == 1) {
+			out += "x";
+		} else if (i == lastmove) {
+			out += "O";
+		} else {
+			out += "o";
+		}
+	}
+
+	return out;
+}
+
 bool Game::validClick(int cellindex) {
 	int clickboardindex = cellindex / 9;
 
@@ -125,6 +155,20 @@ bool Game::validClick(int cellindex) {
 	if (cells[cellindex] != 0) return false; // Clicked on an occupied cell
 
 	return true;
+}
+
+int Game::getEmptySpaces() {
+	int out = 0;
+
+	for (int megacell = 0; megacell < 9; megacell++) {
+		if (megacells[megacell] != 0) continue;
+
+		for (int cell = 0; cell < 9; cell++) {
+			if (cells[9 * megacell + cell] == 0) out++;
+		}
+	}
+
+	return out;
 }
 
 bool Game::isOver() {

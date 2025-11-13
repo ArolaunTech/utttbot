@@ -1,12 +1,18 @@
 #include <vector>
+#include <chrono>
 #include <string>
 #include <iostream>
 
 #include "tests.h"
 #include "../game/game.h"
 
-int perft(Game& game, int depth) {
-	if (depth == 0) return 1;
+int perft(Game& game, int depth, int& nodescount) {
+    nodescount++;
+
+	if (depth == 0) {
+        //std::cout << game.toFen() << "\n";
+        return 1;
+    }
 	if (game.isOver()) return 0;
 
 	int out = 0;
@@ -14,7 +20,7 @@ int perft(Game& game, int depth) {
 		if (!game.validClick(i)) continue;
 
 		game.makeMove(i);
-		out += perft(game, depth - 1);
+		out += perft(game, depth - 1, nodescount);
 		game.unmakeMove(i);
 	}
 
@@ -84,17 +90,26 @@ void runperfttests(Game& game) {
 		game.setFromFen(fens[i]);
 
 		for (int j = 0; j < results[i].size(); j++) {
-			int res = perft(game, j);
+            auto start = std::chrono::high_resolution_clock::now();
+
+            int nodescount = 0;
+
+			int res = perft(game, j, nodescount);
+
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double> duration = end - start;
 
 			std::cout << "Perft with depth " << j << ": " << res;
 
 			if (res == results[i][j]) {
-				std::cout << " (passed)\n";
+				std::cout << " (passed)";
 			} else if (res > results[i][j]) {
-				std::cout << " (failed over, expecting " << results[i][j] << ")\n";
+				std::cout << " (failed over, expecting " << results[i][j] << ")";
 			} else {
-				std::cout << " (failed under, expecting " << results[i][j] << ")\n";
+				std::cout << " (failed under, expecting " << results[i][j] << ")";
 			}
+
+            std::cout << ", Duration = " << duration.count() << " seconds, NPS = " << nodescount / duration.count() << "\n";
 		}
 	}
 }

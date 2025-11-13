@@ -16,9 +16,13 @@ private:
 public:
 	Game();
 
+	void reset();
 	void setFromFen(std::string fen);
+	std::string toFen();
 
 	bool validClick(int cellindex);
+
+	int getEmptySpaces();
 
 	bool isOver();
 	int eval();

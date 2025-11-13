@@ -25,7 +25,7 @@ int monteCarloRun(Game game) {
 	return curr.eval();
 }
 
-int Solver::getBestMove(Game game) {
+int Solver::getBestMove(Game game, int maxnodes, std::chrono::milliseconds duration) {
 	/*========================= AI description =========================*
 	 * - Use some kind of MCTS since minimax is apparently ineffective
 	 *   due to the lack of a good evaluation function.
@@ -36,7 +36,10 @@ int Solver::getBestMove(Game game) {
 
 	Game curr = game;
 
-	for (int sim = 0; sim < 10000; sim++) {
+	auto start = std::chrono::steady_clock::now();
+	std::chrono::milliseconds millisecond(1); //Buffer
+
+	for (int sim = 0; sim < maxnodes; sim++) {
 		path.clear();
 
 		path.push_back(&root);
@@ -112,6 +115,8 @@ int Solver::getBestMove(Game game) {
 			curr.unmakeMove();
 			path.pop_back();
 		}
+
+		if ((sim % 25 == 0) && (std::chrono::steady_clock::now() >= start + duration - millisecond)) break;
 	}
 
 	int bestindex = 0;
